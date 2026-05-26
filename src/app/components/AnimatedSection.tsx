@@ -16,7 +16,7 @@ export const AnimatedSection = ({
   delay = 0, 
   className = '' 
 }: AnimatedSectionProps) => {
-  const [ref, isIntersecting, hasIntersected] = useIntersectionObserver();
+  const [ref, , hasIntersected] = useIntersectionObserver();
 
   return (
     <div
